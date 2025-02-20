@@ -1,21 +1,66 @@
+@import "../node_modules/@fontsource/dm-sans/400.css";
+@import "../node_modules/@fontsource/dm-sans/300.css";
+@import "../node_modules/@fontsource/dm-sans/500.css";
+@import "../node_modules/@fontsource/dm-sans/600.css";
+@import "../node_modules/@fontsource/dm-sans/700.css";
+@import "../node_modules/@fontsource/dm-sans/800.css";
+@import "../node_modules/@fontsource/dm-sans/900.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: "DM Sans";
+}
+.font-dm-light {
+  font-family: "DM Sans";
+  font-weight: 300;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.font-dm-regular {
+  font-family: "DM Sans";
+  font-weight: 400;
+}
+
+.font-dm-medium {
+  font-family: "DM Sans";
+  font-weight: 500;
+}
+
+.font-dm-semibold {
+  font-family: "DM Sans";
+  font-weight: 600;
+}
+
+.font-dm-bold {
+  font-family: "DM Sans";
+  font-weight: 700;
+}
+
+.font-dm-extrabold {
+  font-family: "DM Sans";
+  font-weight: 800;
+}
+
+.font-dm-black {
+  font-family: "DM Sans";
+  font-weight: 900;
+}
+
+
+@layer components {
+  .smooth {
+    @apply transition-all delay-500 duration-500 ease-in;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+.container_custom {
+  max-width: 95%;
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }

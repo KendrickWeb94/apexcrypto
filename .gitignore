@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+/.designs
+/designs
+designs
 # next.js
 /.next/
 /out/
