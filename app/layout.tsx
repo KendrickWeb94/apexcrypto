@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import "../node_modules/@fontsource/dm-sans/400.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
+
 // If using Next.js 13+ App Router
 
 export const metadata: Metadata = {
@@ -45,7 +48,7 @@ export const metadata: Metadata = {
     index: true, // Allow search engines to index the page
     follow: true, // Allow search engines to follow links on the page
   },
-  
+
   // ... other meta tags as needed
 };
 
@@ -55,8 +58,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="min-h-screen w-full bg-background container_custom text-white">{children}</body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
+    >
+      <html lang="en">
+        <body className="min-h-screen w-full bg-background container_custom text-white">
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

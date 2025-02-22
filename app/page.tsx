@@ -16,6 +16,7 @@ import TradingWidget1 from "@/components/ui/trading-widget-1";
 export default function Home() {
   return (
     <div className="">
+   
       <ApexStats />
       <WhyChooseUs />
       <TopCoins />

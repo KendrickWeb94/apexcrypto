@@ -4,6 +4,7 @@ import HeroImg from "@/public/imgs/Hero-img.png";
 import BadgeImg from "@/public/icons/batch.svg";
 import Image from "next/image";
 import ArrowedButton from "../ui/arrowed-button";
+import { OrganizationList } from "@clerk/nextjs";
 
 export { HeroImg, BadgeImg };
 
@@ -20,10 +21,12 @@ export default function Hero() {
           our cutting-edge platform.
         </p>
         <ArrowedButton>Get started</ArrowedButton>
+       
       </div>
       <div className="md:flex-grow md:w-full ds:max-w-lg">
         <Image src={HeroImg} alt="" />
       </div>
+
     </div>
   );
 }
