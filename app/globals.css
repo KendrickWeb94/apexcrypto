@@ -57,10 +57,18 @@ body {
 
 
 .container_custom {
-  max-width: 95%;
+  max-width: 93%;
   height: auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+
+.grid-cat {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }

@@ -1,3 +1,7 @@
+import ApexStats from "@/components/sections/apex-stats";
+import Hero from "@/components/sections/hero";
+import TopCoins from "@/components/sections/top-coins";
+import WhyChooseUs from "@/components/sections/why-choose-us";
 import ArrowedButton from "@/components/ui/arrowed-button";
 import Button from "@/components/ui/button";
 import FeaturedCoinsBg from "@/components/ui/featured-coins-bg";
@@ -6,11 +10,16 @@ import Logo from "@/components/ui/logo";
 import Navlinks from "@/components/ui/navlinks";
 import PrimaryText from "@/components/ui/primary-text";
 import TradingWidget1 from "@/components/ui/trading-widget-1";
+
 // import TradingViewWidget from "@/components/ui/trading-widget-2";
 
 export default function Home() {
   return (
     <div className="">
+      <ApexStats />
+      <WhyChooseUs />
+      <TopCoins />
+      <Hero />
       <Button>
         Get started
       </Button>
