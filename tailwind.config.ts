@@ -24,6 +24,7 @@ export default {
         xs: "480px",
         bs: "540px",
         mdl: "978px",
+        mdx: "800px",
       },
     },
   },

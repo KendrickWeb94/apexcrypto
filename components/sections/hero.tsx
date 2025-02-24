@@ -5,6 +5,7 @@ import BadgeImg from "@/public/icons/batch.svg";
 import Image from "next/image";
 import ArrowedButton from "../ui/arrowed-button";
 import { OrganizationList } from "@clerk/nextjs";
+import Link from "next/link";
 
 export { HeroImg, BadgeImg };
 
@@ -20,13 +21,13 @@ export default function Hero() {
           Trade cryptocurrencies with ease, security, and advanced features on
           our cutting-edge platform.
         </p>
-        <ArrowedButton>Get started</ArrowedButton>
-       
+        <ArrowedButton>
+          <Link href={"/sign-up"}>Get started</Link>
+        </ArrowedButton>
       </div>
       <div className="md:flex-grow md:w-full ds:max-w-lg">
         <Image src={HeroImg} alt="" />
       </div>
-
     </div>
   );
 }

@@ -10,6 +10,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DM Sans";
 }
@@ -65,10 +69,27 @@ body {
   position: relative;
 }
 
+.container_custom_2 {
+  max-width: 93%;
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+}
+
 
 .grid-cat {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
+}
+
+.grid-cat-1 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: center;
 }
