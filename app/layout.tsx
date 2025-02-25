@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "secure",
     "fast",
     "united states",
-    "crypto exchange nigeria",
+    "crypto exchange usa",
   ], // Add relevant keywords
   openGraph: {
     title: "ApexCrypto - Fast and Secure Cryptocurrency Exchange",
