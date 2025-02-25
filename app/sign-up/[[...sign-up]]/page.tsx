@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <main>
       <Navbar />
-      <div className="w-full  mt-52 h-screen flex items-center justify-center">
+      <div className="w-full  my-52 h-screen flex items-center justify-center">
         <div className="relative   items-center justify-center flex flex-col h-screen space-y-5 z-30">
           <div className="flex text-center justify-center flex-wrap items-center gap-2">
             Already have an account? easy peasy just
@@ -19,8 +19,9 @@ export default function Page() {
           <SignUp afterSignOutUrl={"/"} afterSignInUrl="/dashboard" />
         </div>
       </div>
-
-      <Footer />
+      <div className="container_custom">
+        <Footer />
+      </div>
     </main>
   );
 }
