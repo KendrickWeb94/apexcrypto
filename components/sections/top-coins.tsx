@@ -1,16 +1,23 @@
+"use client"
+
 import { Top_Coins } from "../../constants";
 import FeaturedCoinsBg from "../ui/featured-coins-bg";
 import PrimaryText from "../ui/primary-text";
-import coin5 from "@/public/icons/coin-5.svg"
+import coin5 from "@/public/icons/coin-5.svg";
 import Image from "next/image";
+import {motion}  from "framer-motion"
 
-export {
-    coin5
-}
+
+export { coin5 };
 
 const TopCoins: React.FC = () => {
   return (
-    <main className="space-y-5 w-full">
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ ease: "backInOut", delay: 0.1, duration: 2 }}
+      className="space-y-5 w-full"
+    >
       <div className="space-y-3">
         <div className="flex gap-1 items-center justify-center text-center">
           featured
@@ -38,7 +45,7 @@ const TopCoins: React.FC = () => {
           </FeaturedCoinsBg>
         ))}
       </div>
-    </main>
+    </motion.div>
   );
 };
 

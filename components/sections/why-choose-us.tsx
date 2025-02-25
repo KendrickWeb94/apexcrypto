@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import PrimaryText from "../ui/primary-text";
 import ChooseUsImg from "@/public/imgs/whychoose.png"
@@ -5,7 +6,7 @@ import why1 from "@/public/icons/why1.png"
 import why2 from "@/public/icons/why2.png"
 import why3 from "@/public/icons/why3.png"
 import { Gear, House, Lightning } from "@phosphor-icons/react/dist/ssr";
-
+import {motion}  from "framer-motion"
 export {
     ChooseUsImg,
     why1,
@@ -16,7 +17,11 @@ export {
 
 export default function WhyChooseUs() {
   return (
-    <div className="w-full flex justify-between  ds:flex-wrap md:flex-nowrap gap-10">
+    <motion.div
+    initial={{ opacity: 0,y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ ease: "linear", delay: 0.1, duration: 2 }}
+    className="w-full flex justify-between  ds:flex-wrap md:flex-nowrap gap-10">
       <div className=" w-full space-y-4 md:max-w-[60%]">
         <div className="flex gap-1">
           why choose
@@ -53,6 +58,6 @@ export default function WhyChooseUs() {
       <div className="flex-grow">
         <Image src={ChooseUsImg} alt="" />
       </div>
-    </div>
+    </motion.div>
   );
 }
