@@ -1,26 +1,24 @@
 import { SignUp } from "@clerk/nextjs";
-import Navbar from "@/components/ui/navbar";
-import Footer from "@/components/ui/footer";
 import PrimaryText from "@/components/ui/primary-text";
 import Link from "next/link";
+import GoBackButton from "@/components/ui/go-back";
 
 export default function Page() {
   return (
     <main>
-      <Navbar />
-      <div className="w-full  my-52 h-screen flex items-center justify-center">
-        <div className="relative   items-center justify-center flex flex-col h-screen space-y-5 z-30">
+      <div className="w-full relative h-screen flex items-center justify-center">
+        <GoBackButton />
+        <div className="relative  ds:pt-[40rem] sm:pt-64   items-center justify-center flex flex-col h-screen space-y-5 z-30">
           <div className="flex text-center justify-center flex-wrap items-center gap-2">
-            Already have an account? easy peasy just
+            Already have an account? please
             <PrimaryText>
               <Link href={"/sign-in"}>login in instead</Link>
             </PrimaryText>
           </div>
-          <SignUp afterSignOutUrl={"/"} afterSignInUrl="/dashboard" />
+          <div className="">
+            <SignUp afterSignOutUrl={"/"} afterSignInUrl="/dashboard" />
+          </div>
         </div>
-      </div>
-      <div className="container_custom">
-        <Footer />
       </div>
     </main>
   );
