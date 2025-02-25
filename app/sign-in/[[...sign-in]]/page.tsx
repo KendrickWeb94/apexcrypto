@@ -1,4 +1,4 @@
-import { SignIn, SignUp } from "@clerk/nextjs";
+import { SignIn } from "@clerk/nextjs";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import PrimaryText from "@/components/ui/primary-text";
