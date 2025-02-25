@@ -4,6 +4,7 @@ import "./globals.css";
 import "../node_modules/@fontsource/dm-sans/400.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import { Analytics } from "@vercel/analytics/react"
 
 // If using Next.js 13+ App Router
 
@@ -64,6 +65,7 @@ export default function RootLayout({
       }}
     >
       <html lang="en" suppressHydrationWarning>
+        <Analytics />
         <body className="min-h-screen w-full bg-background  text-white">
           {children}
         </body>
