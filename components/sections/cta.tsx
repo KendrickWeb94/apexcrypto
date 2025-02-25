@@ -19,7 +19,7 @@ export default function CTA() {
                             Enjoy seamless crypto experience
                         </h1>
                         <p className=" text-white/60 ">
-                            don't skip the opportunity of using one of the best crypto systems in the world 
+                            don&apos;t skip the opportunity of using one of the best crypto systems in the world 
                         </p>
                     </div>
                     <div className="">
