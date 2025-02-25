@@ -12,7 +12,7 @@ const ApexStats: React.FC = () => {
       <div className="grid-cat justify-center items-center">
         {Stats_Show.map((stat) => (
           <FeaturedCoinsBg key={stat.id}>
-            <div className="flex items-center text-center justify-center flex-col">
+            <div className="flex items-center h-16 py-16 text-center justify-center flex-col">
               <h1 className=" text-2xl font-dm-medium text-primary">{stat.stat_name}</h1>
               <p className="text-white/60 text-base">
               {stat.stat_value}

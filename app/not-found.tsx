@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <div className="w-full">
       <Navbar />
-      <div className="w-full h-screen flex items-center justify-center flex-col gap-4">
+      <div className="w-full h-screen flex items-center justify-center flex-col gap-4 ">
         <h2 className="text-8xl bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-primary/50 text-transparent">
           404
         </h2>
