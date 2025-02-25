@@ -4,11 +4,13 @@ import Image from "next/image";
 import ArrowedButton from "@/components/ui/arrowed-button";
 import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
+
 export default function NotFound() {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen flex flex-col justify-center items-center">
       <Navbar />
-      <div className="w-full h-screen flex items-center justify-center flex-col gap-4 ">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <Image src={NotFoundImg} alt="404 Image" width={400} height={400} />
         <h2 className="text-8xl bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-primary/50 text-transparent">
           404
         </h2>
