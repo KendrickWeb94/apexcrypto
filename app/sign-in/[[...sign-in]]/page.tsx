@@ -1,6 +1,4 @@
 import { SignIn } from "@clerk/nextjs";
-import Navbar from "@/components/ui/navbar";
-import Footer from "@/components/ui/footer";
 import PrimaryText from "@/components/ui/primary-text";
 import Link from "next/link";
 import GoBackButton from "@/components/ui/go-back";
