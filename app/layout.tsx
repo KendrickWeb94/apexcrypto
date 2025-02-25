@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "digital assets",
     "secure",
     "fast",
-    "nigeria",
+    "united states",
     "crypto exchange nigeria",
   ], // Add relevant keywords
   openGraph: {
@@ -63,8 +63,8 @@ export default function RootLayout({
         baseTheme: dark,
       }}
     >
-      <html lang="en">
-        <body className="min-h-screen w-full bg-background container_custom text-white">
+      <html lang="en" suppressHydrationWarning>
+        <body className="min-h-screen w-full bg-background  text-white">
           {children}
         </body>
       </html>

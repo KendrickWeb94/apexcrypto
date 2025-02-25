@@ -1,4 +1,4 @@
-import { SignIn } from "@clerk/nextjs";
+import {  SignIn } from "@clerk/nextjs";
 import AuthBg from "@/public/imgs/auth-bg.png";
 import Image from "next/image";
 import Navbar from "@/components/ui/navbar";
@@ -12,24 +12,31 @@ export default function Page() {
   return (
     <main>
       <Navbar />
-      <div className="w-full h-screen mt-24 flex items-center justify-center">
-        <Image
+      <div className="w-full  mt-20 h-screen flex items-center justify-center">
+        {/* <Image
           src={AuthBg}
           alt=""
           className="w-full h-full object-cover fixed top-0 z-10"
-        />
-           <div className="relative space-y-5 z-30">
+        /> */}
+        
+        <div className="relative   items-center justify-center flex flex-col h-screen space-y-5 z-30">
           <SignIn />
-          <div className="flex items-center gap-2">
-            Don't have an account? don't worry you can
+          <div className="flex text-center justify-center flex-wrap items-center gap-2">
+            Don't have an account? don't worry 
             <PrimaryText>
                 <Link href={"/sign-up"}>
-                    create an account?
+                    create an account
                 </Link>
             </PrimaryText>
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </main>
   );

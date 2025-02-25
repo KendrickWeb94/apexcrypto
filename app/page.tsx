@@ -3,52 +3,48 @@ import BestSolution from "@/components/sections/best-solutions";
 import Hero from "@/components/sections/hero";
 import TopCoins from "@/components/sections/top-coins";
 import WhyChooseUs from "@/components/sections/why-choose-us";
-import ArrowedButton from "@/components/ui/arrowed-button";
-import Button from "@/components/ui/button";
-import FeaturedCoinsBg from "@/components/ui/featured-coins-bg";
 import Footer from "@/components/ui/footer";
-import Logo from "@/components/ui/logo";
 import Navbar from "@/components/ui/navbar";
-import Navlinks from "@/components/ui/navlinks";
-import PrimaryText from "@/components/ui/primary-text";
-import TradingWidget1 from "@/components/ui/trading-widget-1";
 import TradingViewPage from "@/components/ui/tradingviewpage";
 import CTA from "../components/sections/cta";
 import Choices from "@/components/sections/choices";
+import Support from "@/components/sections/support";
+import CryptoStats from "@/components/sections/crypto-stats";
+import TestimonialsSwiper from "@/components/sections/testimonials";
 
 // import TradingViewWidget from "@/components/ui/trading-widget-2";
 
 export default function Home() {
   return (
-    <div className="">
-      <CTA />
-      <Choices />
-   <BestSolution />
-      <ApexStats />
+    <div className="container_custom space-y-20">
       <Navbar />
-      <WhyChooseUs />
-      <TopCoins />
       <Hero />
-      <Button>
-        Get started
-      </Button>
-      <Logo />
-      <ArrowedButton >
-        Get Started
-      </ArrowedButton>
-      <Navlinks />
-      <PrimaryText >
-        choose us
-      </PrimaryText>
-      <FeaturedCoinsBg>
-        fry
-      </FeaturedCoinsBg>
-   <section id="footer">
-   <Footer />
-   </section>
-   <TradingViewPage />
+      <section id="featured-coins">
+        <TopCoins />
+      </section>
+      <section id="why-apex">
+        <WhyChooseUs />
+      </section>
+      <ApexStats />
+
+      <section id="benefits">
+        <BestSolution />
+      </section>
+      <CTA />
+      <CryptoStats />
+      <Choices />
+      <div id="feedback">
+        <TestimonialsSwiper />
+      </div>
+      <TradingViewPage />
+      <Support />
+
+      <section id="footer">
+        <Footer />
+      </section>
+
       {/* <TradingViewWidget /> */}
-{/* 
+      {/* 
       <section id="featured-coins">
         <FeaturedCoins />
       </section>
@@ -65,5 +61,5 @@ export default function Home() {
         <Faqs />
       </section> */}
     </div>
-  )
+  );
 }

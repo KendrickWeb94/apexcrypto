@@ -1,9 +1,9 @@
 export const NAV_LINKS = [
   { label: "Featured Coins", href: "#featured-coins" },
+  { label: "Why apex", href: "#why-apex" },
   { label: "Benefits", href: "#benefits" },
   { label: "Services", href: "#services" },
-  { label: "Why apex", href: "#upgrade" },
-  { label: "FAQ's", href: "#faqs" },
+  { label: "client feedback", href: "#feedback" },
 ];
 
 import coin6 from "@/public/icons/coin-6.svg";
@@ -81,4 +81,44 @@ export const Stats_Show = [
     stat_name: "$22B+",
     stat_value: "Trade volume",
   },
+];
+
+
+// data/testimonials.ts
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Sarah Johnson',
+    date: '2020-11-15',
+    imageUrl: 'https://randomuser.me/api/portraits/women/68.jpg',
+    comment: "ApexCrypto turned my small crypto investment into something substantial! Their mining pools are incredibly efficient, and their trading platform is user-friendly. I'm seeing real growth!",
+  },
+  {
+    id: 2,
+    name: 'Michael Davis',
+    date: '2021-04-22',
+    imageUrl: 'https://randomuser.me/api/portraits/men/57.jpg',
+    comment: "As a beginner in crypto, ApexCrypto made everything easy to understand. The educational resources are top-notch, and the support team is always ready to help. Highly recommend!",
+  },
+  {
+    id: 3,
+    name: 'Emily White',
+    date: '2022-01-08',
+    imageUrl: 'https://randomuser.me/api/portraits/women/49.jpg',
+    comment: "The security features on ApexCrypto are unmatched. I feel safe trading and storing my assets here. Plus, the variety of coins available is fantastic!",
+  },
+  {
+    id: 4,
+    name: 'David Brown',
+    date: '2023-07-03',
+    imageUrl: 'https://randomuser.me/api/portraits/men/82.jpg',
+    comment: "I've tried several crypto platforms, but ApexCrypto stands out. Their mining rewards are consistently high, and the trading fees are very competitive. A solid platform for any serious investor.",
+  },
+    {
+    id: 5,
+    name: 'Olivia Wilson',
+    date: '2024-02-18',
+    imageUrl: 'https://randomuser.me/api/portraits/women/31.jpg',
+    comment: "ApexCrypto's interface is so intuitive! I love how easy it is to track my portfolio and execute trades. The mobile app is also excellent for trading on the go.",
+  }
 ];

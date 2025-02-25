@@ -16,8 +16,8 @@ export {
 
 export default function WhyChooseUs() {
   return (
-    <div className="w-full flex justify-between ds:flex-wrap md:flex-nowrap gap-10">
-      <div className=" w-full space-y-4">
+    <div className="w-full flex justify-between  ds:flex-wrap md:flex-nowrap gap-10">
+      <div className=" w-full space-y-4 md:max-w-[60%]">
         <div className="flex gap-1">
           why choose
           <PrimaryText>apexcrpto</PrimaryText>
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
             </div>
         </div>
       </div>
-      <div className="max-w-xl">
+      <div className="flex-grow">
         <Image src={ChooseUsImg} alt="" />
       </div>
     </div>

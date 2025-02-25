@@ -11,7 +11,7 @@ export { HeroImg, BadgeImg };
 
 export default function Hero() {
   return (
-    <div className="w-full flex justify-between ds:flex-wrap md:flex-nowrap gap-10">
+    <div className="w-full flex justify-between pt-16 ds:flex-wrap md:flex-nowrap gap-10">
       <div className="space-y-5 md:w-[60%]">
         <Image src={BadgeImg} alt="Future of crypto trading" />
         <h1 className="ds:text-4xl ds:leading-[1.1] md:text-6xl sm:text-5xl sm:leading-[1.1] text-white md:leading-[1.1] text-balance">

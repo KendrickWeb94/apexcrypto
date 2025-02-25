@@ -7,6 +7,7 @@ import HamburgerMenu from "@/public/icons/hamburger-menu.svg";
 import Image from "next/image";
 import MobileNav from "./mobile-nav";
 
+
 export { HamburgerMenu };
 
 export default function Navbar() {
@@ -50,6 +51,7 @@ export default function Navbar() {
           >
             <Image src={HamburgerMenu} alt="" />
           </button>
+          
         </div>
       </div>
     </div>
