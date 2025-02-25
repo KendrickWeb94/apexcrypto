@@ -2,8 +2,7 @@
 
 import { Stats_Show } from "../../constants";
 import FeaturedCoinsBg from "../ui/featured-coins-bg";
-import PrimaryText from "../ui/primary-text";
-import Image from "next/image";
+
 
 
 const ApexStats: React.FC = () => {

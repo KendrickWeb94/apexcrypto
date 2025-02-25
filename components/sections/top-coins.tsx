@@ -1,5 +1,4 @@
 import { Top_Coins } from "../../constants";
-import Link from "next/link";
 import FeaturedCoinsBg from "../ui/featured-coins-bg";
 import PrimaryText from "../ui/primary-text";
 import coin5 from "@/public/icons/coin-5.svg"

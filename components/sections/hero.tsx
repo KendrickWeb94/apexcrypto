@@ -4,7 +4,6 @@ import HeroImg from "@/public/imgs/Hero-img.png";
 import BadgeImg from "@/public/icons/batch.svg";
 import Image from "next/image";
 import ArrowedButton from "../ui/arrowed-button";
-import { OrganizationList } from "@clerk/nextjs";
 import Link from "next/link";
 
 export { HeroImg, BadgeImg };

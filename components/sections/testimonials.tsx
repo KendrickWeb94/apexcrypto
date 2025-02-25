@@ -1,7 +1,7 @@
 // components/TestimonialsSwiper.tsx
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y } from "swiper/modules";
 import "swiper/css";
@@ -10,19 +10,8 @@ import { testimonials } from "@/constants";
 import Rating from "@/public/imgs/rating.png";
 import Image from "next/image";
 
-export { Rating };
-
 const TestimonialsSwiper: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const swiperRef = useRef<any>(null);
-
-  useEffect(() => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.on("slideChange", () => {
-        setActiveIndex(swiperRef.current.swiper.activeIndex);
-      });
-    }
-  }, []);
+ 
 
   return (
     <Swiper
@@ -46,22 +35,21 @@ const TestimonialsSwiper: React.FC = () => {
           spaceBetween: 50,
         },
       }}
-      onSwiper={(swiper) => (swiperRef.current = swiper)}
     >
-      {testimonials.map((testimonial, index) => (
+      {testimonials.map((testimonial) => (
         <SwiperSlide key={testimonial.id}>
           <div
-            className={`flex flex-col my-14 gap-4 border border-white/10 rounded-lg p-5 bg-gradient-to-r from-white/10 to-primary/10 transition-transform duration-300 ${
-              activeIndex === index ? "scale-100" : "scale-100"
-            }`}
+            className="flex flex-col my-14 gap-4 border border-white/10 rounded-lg p-5 bg-gradient-to-r from-white/10 to-primary/10 transition-transform duration-300"
           >
             <p className="text-white/60">{testimonial.comment}</p>
             <div className="w-full flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <img
+                <Image
                   src={testimonial.imageUrl}
                   alt={`${testimonial.name}'s profile`}
-                  className="rounded-full w-14 h-14 border border-white/80"
+                  className="rounded-full border border-white/80"
+                  width={56}
+                  height={56}
                 />
                 <div className="">
                   <p className="font-dm-medium">{testimonial.name}</p>

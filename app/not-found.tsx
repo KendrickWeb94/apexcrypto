@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import ArrowedButton from "@/components/ui/arrowed-button";
 import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";

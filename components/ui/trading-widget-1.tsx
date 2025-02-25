@@ -33,10 +33,13 @@ const TradingViewWidget: React.FC = () => {
       }
     }
 
+    // Copy container.current to a local variable
+    const currentContainer = container.current;
+
     // Cleanup function to remove the script when the component unmounts
     return () => {
-      if (container.current) {
-        container.current.innerHTML = '';
+      if (currentContainer) {
+        currentContainer.innerHTML = '';
       }
     };
   }, []);
