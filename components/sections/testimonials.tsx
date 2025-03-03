@@ -17,7 +17,6 @@ const TestimonialsSwiper: React.FC = () => {
     <Swiper
       modules={[Pagination, A11y]}
       spaceBetween={50}
-      slidesPerView={3}
       centeredSlides={true}
       loop={true}
       pagination={{ clickable: true }}

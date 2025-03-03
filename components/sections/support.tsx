@@ -27,14 +27,14 @@ export default function Support() {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center flex-wrap justify-center">
         <div className="w-full min-h-[230px] overflow-hidden py-8 rounded-2xl border px-16 border-white/20 flex items-center justify-center max-w-full h-auto bg-white/10 relative">
           <Image
             src={Vector}
             alt=""
             className="absolute right-0 md:h-[70%] w-full bottom-0"
           />
-          <div className="relative z-10 w-full flex items-center justify-between">
+          <div className="relative z-10 w-full flex items-center flex-wrap ds:justify-center sm:justify-between">
             <div className="space-y-4 flex flex-col items-center text-center">
               <div className="text-[1.5rem] h-16 w-16 rounded-full from-white/10 to-primary/10 flex items-center justify-center text-primary bg-gradient-to-r">
                 <Headset />

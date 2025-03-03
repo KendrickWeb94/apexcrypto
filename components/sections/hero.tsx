@@ -32,9 +32,11 @@ export default function Hero() {
       </motion.div>
 
       <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "backInOut", delay: 0.5, duration: 2 }} className="md:flex-grow md:w-full ds:max-w-lg">
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "backInOut", delay: 0.5, duration: 2 }}
+        className="md:flex-grow md:w-full ds:max-w-lg"
+      >
         <Image src={HeroImg} alt="" />
       </motion.div>
     </div>
