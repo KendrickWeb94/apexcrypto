@@ -2,8 +2,8 @@
 import React from "react";
 import { TopBar } from "./components/topbar";
 import { SideBar } from "./components/sidebar";
-import barLinks from "./utils";
-
+// import { UserButton } from "@clerk/nextjs";
+// import { usePathname } from "next/navigation";
 export default function DashboardLayout({
   children,
 }: {

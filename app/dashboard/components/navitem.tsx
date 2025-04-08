@@ -6,8 +6,12 @@ import { Bank,  Bell,  HandWithdraw, Layout,  PiggyBank, SignOut, User } from "@
 
 export const NavItems = () => {
   const [ActiveLink, setActiveLink] = useState(false);
+  function toggleactiveLink() {
+    setActiveLink(!ActiveLink);
+  }
   return (
     <ul className="list-none flex flex-col gap-3 mt-10">
+      <button className="w-0 h-0 hidden" onClick={toggleactiveLink}></button>
       <li
         
             className={

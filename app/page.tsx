@@ -7,7 +7,7 @@ import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
 import TradingViewPage from "@/components/ui/tradingviewpage";
 import CTA from "../components/sections/cta";
-import Choices from "@/components/sections/choices";
+
 import Support from "@/components/sections/support";
 import CryptoStats from "@/components/sections/crypto-stats";
 import TestimonialsSwiper from "@/components/sections/testimonials";

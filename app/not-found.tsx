@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ArrowedButton from "@/components/ui/arrowed-button";
-import Footer from "@/components/ui/footer";
-import Navbar from "@/components/ui/navbar";
+
 
 export default function NotFound() {
   return (
