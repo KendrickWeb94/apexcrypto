@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-4">
           <div className="ds:hidden sm:block">
-            <Button>Get started</Button>
+            <Button>Get Started</Button>
           </div>
           <button
             onClick={ToggleMobile}

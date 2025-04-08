@@ -19,6 +19,8 @@ designs
 # next.js
 /.next/
 /out/
+/trash
+trash
 
 # production
 /build

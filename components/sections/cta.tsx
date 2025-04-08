@@ -11,7 +11,7 @@ export {
 export default function CTA() {
     return (
         <div className=" min-h-[60vh] flex items-center justify-center">
-        <div className="w-full min-h-[230px] overflow-hidden py-8 rounded-2xl border px-10 border-white/20 flex items-center justify-center max-w-full h-auto bg-white/10 relative">
+        <div className="w-full min-h-[230px] overflow-hidden py-8 rounded-2xl border px-10 border-white/10 flex items-center justify-center max-w-full h-auto bg-white/5 relative">
                 <Image src={Abstract} alt="" className="absolute right-0 h-full top-0"/>
                 <div className="w-full z-10 flex items-center flex-wrap gap-10 justify-between relative">
                     <div className="space-y-2">
@@ -25,7 +25,7 @@ export default function CTA() {
                     <div className="">
                         <ArrowedButton>
                             <Link href={"/sign-up"}>
-                                Get started
+                                Get Started
                             </Link>
                         </ArrowedButton>
                     </div>

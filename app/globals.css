@@ -55,7 +55,7 @@ body {
 
 @layer components {
   .smooth {
-    @apply transition-all delay-500 duration-500 ease-in;
+    @apply transition-all delay-700 duration-700 ease-in-out;
   }
 }
 
@@ -86,10 +86,6 @@ body {
   gap: 1rem;
 }
 
-.grid-cat-1 {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  align-items: center;
+.z-1 {
+  z-index: -2;
 }

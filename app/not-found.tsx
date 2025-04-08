@@ -6,7 +6,7 @@ import Navbar from "@/components/ui/navbar";
 export default function NotFound() {
   return (
     <div className="">
-      <Navbar />
+
       <div className="flex flex-col h-screen items-center justify-center gap-4">
        
         <h2 className="text-8xl bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-primary/50 text-transparent">
@@ -22,7 +22,7 @@ export default function NotFound() {
           <ArrowedButton>Back to home</ArrowedButton>
         </Link>
       </div>
-      <Footer />
+
     </div>
   );
 }

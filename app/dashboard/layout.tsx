@@ -1,6 +1,8 @@
 // app/dashboard/layout.tsx
-import React from 'react';
-
+import React from "react";
+import { TopBar } from "./components/topbar";
+import { SideBar } from "./components/sidebar";
+import barLinks from "./utils";
 
 export default function DashboardLayout({
   children,
@@ -8,12 +10,14 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-        <div>
-        <main className="w-full bg-[#18181b]">
+    <main>
+      <section className="w-full relative bg-[#18181b] flex min-h-screen">
+        <SideBar />
+        <div className="flex flex-grow  flex-col w-full gap-4">
+          <TopBar />
           {children}
-        </main>
-      </div>
-    </div>
+        </div>
+      </section>
+    </main>
   );
 }

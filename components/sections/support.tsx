@@ -50,7 +50,7 @@ export default function Support() {
               </div>
               <h1>Community</h1>
               <p className="text-sm max-w-[250px] text-white/60">
-                Join the conversations on our worldwide OKEx communities
+                Join the conversations on our worldwide  communities
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">

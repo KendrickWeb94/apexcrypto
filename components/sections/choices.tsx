@@ -14,13 +14,13 @@ export default function Choices() {
             <PrimaryText>Crypto coins</PrimaryText>
           </div>
           <h1 className="text-5xl">Our crypto variaties</h1>
-          <p className="text-white/60">
+          <p className="text-white/60 text-balance">
             pick a coin or more from our collection to star trading or using,
             and guess what? at good rates too{" "}
           </p>
         </div>
       </div>
-      <Image src={ChoiceImg} alt="" className="md:max-w-lg" />
+      <Image src={ChoiceImg} alt="" className="md:max-w-lg max-h-[300px] object-cover" />
     </div>
   );
 }

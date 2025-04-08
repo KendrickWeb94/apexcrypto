@@ -21,8 +21,8 @@ export default function WhyChooseUs() {
     initial={{ opacity: 0,y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ ease: "linear", delay: 0.1, duration: 2 }}
-    className="w-full flex justify-between  ds:flex-wrap md:flex-nowrap gap-10">
-      <div className=" w-full space-y-4 md:max-w-[60%]">
+    className="w-full flex justify-between items-center ds:flex-wrap md:flex-nowrap gap-10">
+      <div className=" w-full space-y-4 md:max-w-[55%]">
         <div className="flex gap-1">
           why choose
           <PrimaryText>apexcrpto</PrimaryText>
@@ -31,22 +31,22 @@ export default function WhyChooseUs() {
           Features of apexCrypto, and why you should use it
         </h1>
         <br />
-        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="flex  gap-3 items-center">
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 gap-6">
+            <div className="flex  gap-6 items-center pb-4 border-b max-w-[25rem] border-white/20 ">
              
                 <div className="w-8 h-8 rounded-full items-center flex justify-center bg-white/20">
                     <House className="text-primary"/>
                 </div>
                 <p className="text-white/80">One of the best crypto and trading platforms</p>
             </div>
-            <div className="flex  gap-3 items-center">
+            <div className="flex  gap-6 items-center pb-4 border-b max-w-[25rem] border-white/20 ">
                
                 <div className="w-8 h-8 rounded-full items-center flex justify-center bg-white/20">
                     <Lightning className="text-primary"/>
                 </div>
                 <p className="text-white/80">Kickstart your crypto experience with speed</p>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-6 pb-4 border-b max-w-[25rem] border-white/20 ">
                
                 <div className="w-8 h-8 rounded-full items-center flex justify-center bg-white/20">
                     <Gear className="text-primary"/>

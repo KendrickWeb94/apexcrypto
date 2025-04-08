@@ -1,6 +1,7 @@
 
 import ArrowRight from "@/public/icons/arrow-right.svg"
-import Image from "next/image";
+import { ArrowsLeftRight } from "@phosphor-icons/react/dist/ssr";
+
 export {
     ArrowRight
 }
@@ -10,9 +11,9 @@ export default function ArrowedButton({
     children: React.ReactNode;
   }>) {
     return (
-      <button className=" rounded-xl flex items-center justify-center  hover:bg-primary/80 smooth  gap-2 bg-primary  h-12 font-dm-semibold text-background px-5">
+      <button className=" rounded-3xl bg-primary/10 border-t border-b smooth  border-primary  smooth hover hover:bg-primary/30  font-dm-medium text-primary  flex items-center justify-center   smooth  gap-2 bg-primary  py-2  px-5">
         {children}
-        <Image src={ArrowRight} alt="arrow icon" />
+        <ArrowsLeftRight  className="text-primary "/>
       </button>
     );
   }
