@@ -18,7 +18,7 @@ export {
 export default function WhyChooseUs() {
   return (
     <motion.div
-    initial={{ opacity: 0,y: 10 }}
+    initial={{ opacity: 1,y: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ ease: "linear", delay: 0.1, duration: 2 }}
     className="w-full flex justify-between items-center ds:flex-wrap md:flex-nowrap gap-10">
