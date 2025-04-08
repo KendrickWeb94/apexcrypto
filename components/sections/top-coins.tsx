@@ -13,7 +13,7 @@ export { coin5 };
 const TopCoins: React.FC = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -200 }}
+      initial={{ opacity: 0, x: 0 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ ease: "backInOut", delay: 0.1, duration: 2 }}
       className="space-y-5 w-full"
